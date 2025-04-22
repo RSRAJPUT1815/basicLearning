@@ -1,0 +1,131 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins';
+  box-sizing: border-box;
+}
+
+.first{
+  width: 100% ;
+  min-height: 100vh;
+  background: linear-gradient(45deg,#000428,#004e92 );
+  color: whitesmoke;
+  position: relative;
+}
+
+.sec{
+  width: 200px;
+  height: 70px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.clock{
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(0.8px);
+  
+}
+
+
+
+.clock span{
+  font-size: 20px;
+  width: 30px;
+  direction: inline-block;
+  text-align: center;
+  position: relative;
+}
+.clock span::after{
+  font-size: 4px;
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  transform: translate(-50%)
+}
+
+#hor::after{
+  content: 'HOURS';
+}
+#min::after{
+  content: 'MINS';
+}
+
+#sec::after{
+  content: 'SEC';
+}
+
+.date,
+.day,
+.mon,
+.yer{
+  border: 1px solid white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.date{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 23%;
+  top: 40%;
+}
+.day{
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  left: 35%;
+  top: 52%;
+}
+.mon{
+  width: 70px;
+  height: 50px;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+}
+.yer{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 63%;
+  top: 40%;
+}
+
+.date span::after,
+.day span::after,
+.mon span::after,
+.yer span::after{
+  font-size: 4px;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%)
+}
+
+
+#date::after{
+  content: 'Date'
+}
+#mon::after{
+  content: 'Month'
+}
+
+#yer::after{
+  content: 'Year'
+}
+#day::after{
+  content: 'Day'
+}
+
+

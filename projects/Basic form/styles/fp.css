@@ -1,0 +1,79 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3tztxclybd0ZdaTPu_GvjHJ4Xr6wOF7dmUMr-tIAuB7HZWMw0yLqYNFI&s=10");
+  background-size: cover;
+}
+.form{
+  height: 300px;
+  width: 300px;
+  backdrop-filter: blur(5px);
+  border: 2px solid white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.login{
+  margin-top: 12px;
+  margin-left: 15px;
+  font-size: 25px;
+  color : whitesmoke;
+}
+
+
+.user{
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-left: 15px;
+  color: whitesmoke;
+}
+
+input{
+  color: whitesmoke;
+  height: 30px;
+  width:240px;
+  margin-top: 15px;
+  margin-left: 10px;
+  outline: none;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 5px 30px 5px 5px;
+}
+input::placeholder {
+  color: whitesmoke;
+}
+
+input::value{
+  color: whitesmoke;
+}
+
+.button{
+  color: whitesmoke;
+  background: transparent;
+  margin-top: 10px;
+  margin-left: 70px;
+  border: 2px solid white;
+  border-radius: 20px;
+  width : 150px;
+  
+}
+a{
+  text-decoration: none;
+  color: #45dbde;
+  margin-left: 90px;
+  margin-right: 80px;
+  display: block;
+  margin-top: 50px;
+}
+.OTP{
+  display: none;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>calculaterm</title>
+</head>
+<body>
+  <div class="calculater">
+    <div class="input">
+      <input type="text" id="input" placeholder="0" value="" disabled>
+    </div>
+    <div class="buttons">
+      <div class="row1">
+        <button onclick="input.value += '9';">9</button>
+        <button onclick="input.value += '8';">8</button>
+        <button onclick="input.value += '7';">7</button>
+        <button onclick="input.value += '+';" class="sp">+</button>
+      </div>
+      <div class="row2">
+        <button onclick="input.value += 6;" >6</button>
+        <button onclick="input.value += '5';">5</button>
+        <button onclick="input.value += '4';">4</button>
+        <button onclick="input.value += '-';" class="sp">-</button>
+      </div>
+      <div class="row3">
+        <button onclick="input.value += '3';">3</button>
+        <button onclick="input.value += '2';">2</button>
+        <button onclick="input.value += '1';">1</button>
+        <button onclick="input.value += '*';" class="sp">*</button>
+      </div>
+      <div class="row4">
+        <button onclick="input.value = '';" class="sp">ac</button>
+        <button onclick="input.value += '0';">0</button>
+        <button onclick="input.value = eval(input.value);" class="sp">=</button>
+        <button onclick="input.value += '/';" class="sp">/</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

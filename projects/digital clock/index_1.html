@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>My Clock</title>
+</head>
+<body>
+  <div class="first">
+    <div class="sec">
+      <div class="clock">
+        <span id="hor">00</span>
+        <span>:</span>
+        <span id="min">00</span>
+        <span>:</span>
+        <span id="sec">00</span>
+      </div>
+    </div>
+    <div class="date">
+      <span id="date">00</span>
+    </div>
+    <div class="mon">
+      <span id="mon">00</span>
+    </div>
+    <div class="yer">
+      <span id="yer">00</span>
+    </div>
+    <div class="day">
+      <span id="day">00</span>
+    </div>
+  </div>
+  <script>
+  let hrs = document.getElementById("hor");
+  let min = document.getElementById("min");
+  let sec = document.getElementById("sec");
+  let date = document.getElementById("date");
+  let mon = document.getElementById("mon");
+  let yer = document.getElementById("yer");
+  let day = document.getElementById("day");
+  
+  setInterval(() => {
+    let currentTime = new Date();
+    hrs.innerText = (currentTime.getHours()<10?"0":"")+currentTime.getHours();
+    min.innerText = (currentTime.getMinutes()<10?"0":"")+currentTime.getMinutes();
+    sec.innerText = (currentTime.getSeconds()<10?"0":"")+currentTime.getSeconds();
+  },1000);
+  const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  let currentTime = new Date();
+  date.innerText = (currentTime.getDate()<10?"0":"")+currentTime.getDate();
+  mon.innerText = month[currentTime.getMonth()];
+  day.innerText = weekday[currentTime.getDay()];
+  yer.innerText = currentTime.getFullYear();
+  
+  </script>
+</body>
+</html>

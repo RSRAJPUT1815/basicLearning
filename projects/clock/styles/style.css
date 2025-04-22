@@ -1,0 +1,186 @@
+/*:root{
+  --clock-length: 700px;
+}*/
+.clock{
+  height: 700px;
+  width: 700px;
+}
+
+.wrappor{
+  width: 100vw;
+  
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: brige;
+}
+.clock-border{
+  padding: 25px;
+  background-color: #000;
+}
+
+.logo{
+  position: absolute ;
+  top: 60px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.clock{
+  background-color: #ffffff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+li{
+  list-style: none;
+  position: absolute;
+  height: 100%;
+  transform-origin: center;
+  font-size: 50px;
+}
+
+li:nth-child(1){
+  rotate: 30deg;
+}
+li:nth-child(1) div{
+  rotate: -30deg;
+}
+
+li:nth-child(2){
+  rotate: 60deg;
+}
+li:nth-child(2) div{
+  rotate: -60deg;
+}
+
+li:nth-child(3){
+  rotate: 90deg;
+}
+li:nth-child(3) div{
+  rotate: -90deg;
+}
+
+li:nth-child(4){
+  rotate: 120deg;
+}
+li:nth-child(4) div{
+  rotate: -120deg;
+}
+
+li:nth-child(5){
+  rotate: 150deg;
+}
+li:nth-child(5) div{
+  rotate: -150deg;
+}
+
+li:nth-child(6){
+  rotate: 180deg;
+}
+li:nth-child(6) div{
+  rotate: -180deg;
+}
+
+li:nth-child(7){
+  rotate: 210deg;
+}
+li:nth-child(7) div{
+  rotate: -210deg;
+}
+
+li:nth-child(8){
+  rotate: 240deg;
+}
+li:nth-child(8) div{
+  rotate: -240deg;
+}
+
+li:nth-child(9){
+  rotate: 270deg;
+}
+li:nth-child(9) div{
+  rotate: -270deg;
+}
+
+li:nth-child(10){
+  rotate: 300deg;
+}
+li:nth-child(10) div{
+  rotate: -300deg;
+}
+
+li:nth-child(11){
+  rotate: 330deg;
+}
+li:nth-child(11) div{
+  rotate: -330deg;
+}
+
+@keyframe rotate{
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
+.hour{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
+.min{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  
+}
+
+
+.sec{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  
+}
+
+
+.dot{
+  position: absolute;
+  width: 40px;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  background-color: #000;
+  z-index: 10px;
+}
+
+.hand .sec i{
+  position: absolute;
+  width : 4px;
+  height: 260px;
+  background-color: red;
+  border-radius: 40%;
+}
+.hand .hour i{
+  position: absolute;
+  background-color: #000;
+  border-radius: 40%;
+  width : 12px;
+  height: 200px;
+}
+.hand .min i{
+  position: absolute;
+  background-color: #000;
+  border-radius: 40%;
+  width : 8px;
+  height: 230px;
+}
