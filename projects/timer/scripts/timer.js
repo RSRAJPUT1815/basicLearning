@@ -45,4 +45,3 @@ function timeDisplay(){
     timer.innerHTML = `${minchack}:${secchack}:${minisecchack}`
 }
 
-console.log("hi")
